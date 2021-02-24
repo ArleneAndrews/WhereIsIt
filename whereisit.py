@@ -1,5 +1,5 @@
-itemFind = {}
-if len(itemFind)> 1:
+itemFind = {'shoes':'basement'}
+if len(itemFind)>= 1:
   print("Items already listed:")
   for x in itemFind.keys():
     print(x)
