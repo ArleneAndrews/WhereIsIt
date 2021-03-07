@@ -5,8 +5,8 @@ itemFind = {}
 def yesNo():
   answer = input('Any more to list? Yes or No.  ').upper()
   if answer == 'NO' or answer =='N':
-    itemLost()
-      else:
+    findStuff()
+  else:
     addStuff()
 
 def addStuff():
@@ -35,6 +35,11 @@ def itemLost(lostItem):
         return value
     return "This item hasn't been entered."
 
+def findStuff():
+  lostItem = ('What are you looking for?  ')
+  itemLost(lostItem)
+  yesNo()
+
 if len(itemFind)>= 1:
   itemList()
 else:
@@ -43,9 +48,6 @@ else:
   addStuff()
   yesNo()
 # Get item to find
-lostItem = ('What are you looking for?  ')
-hereItIs = itemLost(lostItem)
-print(hereItIs)
 # Return location of item
 # Another item?
 # Update item location?
