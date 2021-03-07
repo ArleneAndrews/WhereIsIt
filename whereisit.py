@@ -5,7 +5,7 @@ itemFind = {}
 def yesNo():
   answer = input('Any more to list? Yes or No.  ').upper()
   if answer == 'NO' or answer =='N':
-    itemList()
+    itemLost()
       else:
     addStuff()
 
